@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { AnimatePresence } from 'framer-motion';
 import CustomCursor from './components/CustomCursor';
 import PageLoader from './components/PageLoader';
 import Hero from './components/Hero';
@@ -19,9 +18,7 @@ function App() {
     <>
       <CustomCursor />
 
-      <AnimatePresence mode="wait">
-        {loading && <PageLoader key="loader" onComplete={() => setLoading(false)} />}
-      </AnimatePresence>
+      {loading && <PageLoader onComplete={() => setLoading(false)} />}
 
       <main className="bg-lush-dark min-h-screen">
         <Hero />

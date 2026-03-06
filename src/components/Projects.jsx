@@ -4,31 +4,31 @@ import { motion } from 'framer-motion';
 const projectsData = [
     {
         id: 1,
-        title: 'The Obsidian Pavilion',
-        category: 'Commercial',
-        image: 'https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-        color: '#0d1117' // Very dark blue/grey
+        title: 'The Crimson Suite',
+        category: 'Residential',
+        image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+        color: '#1a0a0a'
     },
     {
         id: 2,
-        title: 'Aura Residence',
-        category: 'Residential',
-        image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-        color: '#2d3748' // Slate
+        title: 'Velvet Manor',
+        category: 'Luxury Estate',
+        image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+        color: '#1c0505'
     },
     {
         id: 3,
-        title: 'Neon Gallery',
+        title: 'Noir Gallery',
         category: 'Cultural',
-        image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-        color: '#1a202c' // Darker slate
+        image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+        color: '#0d0d0d'
     },
     {
         id: 4,
-        title: 'Zenith Tower',
+        title: 'Opulence Tower',
         category: 'Corporate',
-        image: 'https://images.unsplash.com/photo-1555529733-0e670560f7e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-        color: '#000000' // Black
+        image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+        color: '#100808'
     }
 ];
 
@@ -39,18 +39,22 @@ const Projects = () => {
         <motion.section
             className="py-32 px-4 md:px-12 lg:px-24 transition-colors duration-700 ease-in-out relative"
             animate={{ backgroundColor: activeColor }}
-            style={{ backgroundColor: 'transparent' }} // Fallback
+            style={{ backgroundColor: 'transparent' }}
         >
-            {/* Ensure base background doesn't get fully overridden if transparent */}
             {activeColor === 'transparent' && <div className="absolute inset-0 bg-lush-dark -z-10" />}
 
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16">
-                    <h2 className="text-5xl md:text-7xl font-syne font-bold uppercase text-white">
-                        Selected <br /> Works
-                    </h2>
+                    <div>
+                        <h2 className="text-5xl md:text-7xl font-playfair font-bold text-white normal-case">
+                            Selected
+                        </h2>
+                        <h2 className="font-script text-5xl md:text-7xl text-lush-gold normal-case -mt-2">
+                            Works
+                        </h2>
+                    </div>
                     <p className="text-gray-400 max-w-sm mt-6 md:mt-0 font-inter font-light">
-                        A curated collection of our most defining architectural achievements across the globe.
+                        A curated collection of our most defining interior design achievements across the globe.
                     </p>
                 </div>
 
@@ -76,7 +80,7 @@ const Projects = () => {
 
                                 {/* Discover overlay */}
                                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                                    <div className="w-24 h-24 rounded-full bg-lush-accent/90 backdrop-blur-md flex items-center justify-center text-black font-syne font-bold uppercase text-sm -rotate-12 group-hover:rotate-0 transition-transform duration-500">
+                                    <div className="w-24 h-24 rounded-full bg-lush-red/90 flex items-center justify-center text-white font-playfair font-bold text-sm -rotate-12 group-hover:rotate-0 transition-transform duration-500">
                                         View
                                     </div>
                                 </div>
@@ -84,7 +88,7 @@ const Projects = () => {
 
                             <div className="flex justify-between items-start text-white">
                                 <div>
-                                    <h4 className="text-2xl font-syne font-bold mb-2 group-hover:text-lush-accent transition-colors duration-300">
+                                    <h4 className="text-2xl font-playfair font-bold mb-2 group-hover:text-lush-red transition-colors duration-300 normal-case">
                                         {project.title}
                                     </h4>
                                     <p className="text-sm font-inter text-gray-400 uppercase tracking-widest">

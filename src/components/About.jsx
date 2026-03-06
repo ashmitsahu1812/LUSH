@@ -15,30 +15,30 @@ const About = () => {
     const isInView = useInView(containerRef, { once: true, margin: "-10%" });
 
     return (
-        <section ref={containerRef} className="py-32 px-4 md:px-12 lg:px-24 bg-lush-dark text-white relative z-30">
-            <div className="max-w-7xl mx-auto">
+        <section ref={containerRef} className="py-32 px-4 md:px-12 lg:px-24 bg-lush-dark text-white relative z-30 overflow-hidden">
+            <div className="max-w-7xl mx-auto relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-center">
 
                     {/* Text Content */}
                     <div className="lg:col-span-5 order-2 lg:order-1">
                         <motion.h2
-                            className="text-lush-accent text-sm md:text-base mb-6 tracking-[0.3em]"
+                            className="text-lush-red text-sm md:text-base mb-6 tracking-[0.3em] font-inter uppercase"
                             variants={fadeUpText}
                             initial="hidden"
                             animate={isInView ? "visible" : "hidden"}
                         >
-                            OUR PHILOSOPHY
+                            Our Philosophy
                         </motion.h2>
 
                         <motion.h3
-                            className="text-4xl md:text-6xl font-syne leading-[1.1] mb-8"
+                            className="text-4xl md:text-6xl font-playfair leading-[1.1] mb-8 normal-case"
                             variants={fadeUpText}
                             initial="hidden"
                             animate={isInView ? "visible" : "hidden"}
                         >
-                            We shape <br />
-                            <span className="text-gray-500 italic font-inter font-light">spaces</span> that <br />
-                            shape you.
+                            We craft <br />
+                            <span className="font-script text-lush-gold normal-case text-5xl md:text-7xl">spaces</span> that <br />
+                            inspire you.
                         </motion.h3>
 
                         <motion.p
@@ -47,12 +47,12 @@ const About = () => {
                             initial="hidden"
                             animate={isInView ? "visible" : "hidden"}
                         >
-                            At LUSH, architecture is more than just structure. It's an immersive experience designed to elevate human potential. We merge brutalist fundamentals with avant-garde elegance to create defining landmarks of the modern era.
+                            At LUSH Living, interior design is more than just decoration. It's an immersive experience designed to elevate your everyday. We merge timeless elegance with contemporary sophistication to create spaces layered in luxury.
                         </motion.p>
                     </div>
 
                     {/* Asymmetrical Image Grid */}
-                    <div className="lg:col-span-7 order-1 lg:order-2 grid grid-cols-2 gap-4 md:gap-8">
+                    <div className="lg:col-span-7 order-1 lg:order-2 grid grid-cols-2 gap-4 md:gap-8 transform-gpu">
                         <motion.div
                             className="mt-12 md:mt-24"
                             initial={{ opacity: 0, y: 100 }}
@@ -61,11 +61,11 @@ const About = () => {
                         >
                             <div className="relative overflow-hidden group rounded-sm">
                                 <img
-                                    src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                                    alt="Modern Interior"
-                                    className="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-1000"
+                                    src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                                    alt="Luxury Living Room"
+                                    className="w-full h-auto object-cover transform-gpu scale-100 group-hover:scale-110 transition-transform duration-[1.5s] ease-in-out"
                                 />
-                                <div className="absolute inset-0 bg-lush-accent/20 opacity-0 group-hover:opacity-100 mix-blend-overlay transition-opacity duration-500" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-lush-red/30 to-transparent opacity-0 group-hover:opacity-100 mix-blend-overlay transition-opacity duration-500" />
                             </div>
                         </motion.div>
 
@@ -76,11 +76,11 @@ const About = () => {
                         >
                             <div className="relative overflow-hidden group rounded-sm">
                                 <img
-                                    src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                                    alt="Architecture Detail"
-                                    className="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-1000"
+                                    src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                                    alt="Elegant Interior"
+                                    className="w-full h-auto object-cover transform-gpu scale-100 group-hover:scale-110 transition-transform duration-[1.5s] ease-in-out"
                                 />
-                                <div className="absolute inset-0 bg-lush-accent-2/20 opacity-0 group-hover:opacity-100 mix-blend-overlay transition-opacity duration-500" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-lush-gold/30 to-transparent opacity-0 group-hover:opacity-100 mix-blend-overlay transition-opacity duration-500" />
                             </div>
                         </motion.div>
                     </div>
