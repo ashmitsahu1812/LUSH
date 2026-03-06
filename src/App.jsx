@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import CustomCursor from './components/CustomCursor';
 import PageLoader from './components/PageLoader';
+import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -22,6 +23,7 @@ function App() {
 
       {loading && <PageLoader onComplete={() => setLoading(false)} />}
 
+      <Header onMenuClick={() => setNavOpen(true)} />
       <Navbar isOpen={navOpen} onClose={() => setNavOpen(false)} />
 
       <main className="bg-lush-dark min-h-screen">

@@ -37,28 +37,28 @@ const Projects = () => {
 
     return (
         <motion.section
-            className="py-32 px-4 md:px-12 lg:px-24 transition-colors duration-700 ease-in-out relative"
+            className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 md:px-12 lg:px-24 transition-colors duration-700 ease-in-out relative"
             animate={{ backgroundColor: activeColor }}
             style={{ backgroundColor: 'transparent' }}
         >
             {activeColor === 'transparent' && <div className="absolute inset-0 bg-lush-dark -z-10" />}
 
             <div className="max-w-7xl mx-auto">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-16">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 sm:mb-16">
                     <div>
-                        <h2 className="text-5xl md:text-7xl font-playfair font-bold text-white normal-case">
+                        <h2 className="text-4xl sm:text-5xl md:text-7xl font-playfair font-bold text-white normal-case">
                             Selected
                         </h2>
-                        <h2 className="font-script text-5xl md:text-7xl text-lush-gold normal-case -mt-2">
+                        <h2 className="font-script text-4xl sm:text-5xl md:text-7xl text-lush-gold normal-case -mt-2">
                             Works
                         </h2>
                     </div>
-                    <p className="text-gray-400 max-w-sm mt-6 md:mt-0 font-inter font-light">
+                    <p className="text-sm sm:text-base text-gray-400 max-w-sm mt-4 sm:mt-6 md:mt-0 font-inter font-light">
                         A curated collection of our most defining interior design achievements across the globe.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-16">
                     {projectsData.map((project, index) => (
                         <motion.div
                             key={project.id}
@@ -88,7 +88,7 @@ const Projects = () => {
 
                             <div className="flex justify-between items-start text-white">
                                 <div>
-                                    <h4 className="text-2xl font-playfair font-bold mb-2 group-hover:text-lush-red transition-colors duration-300 normal-case">
+                                    <h4 className="text-xl sm:text-2xl font-playfair font-bold mb-2 group-hover:text-lush-red transition-colors duration-300 normal-case">
                                         {project.title}
                                     </h4>
                                     <p className="text-sm font-inter text-gray-400 uppercase tracking-widest">

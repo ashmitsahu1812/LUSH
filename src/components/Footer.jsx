@@ -5,16 +5,16 @@ import { ArrowUpRight } from 'lucide-react';
 
 const Footer = () => {
     return (
-        <footer className="relative bg-lush-dark text-white pt-32 pb-10 overflow-hidden z-40">
-            <div className="px-4 md:px-12 lg:px-24 mx-auto max-w-[100rem]">
+        <footer className="relative bg-lush-dark text-white pt-16 sm:pt-24 md:pt-32 pb-10 overflow-hidden z-40">
+            <div className="px-4 sm:px-6 md:px-12 lg:px-24 mx-auto max-w-[100rem]">
 
                 {/* Call to Action Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-32 border-b border-white/10 pb-32">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-16 mb-16 sm:mb-24 md:mb-32 border-b border-white/10 pb-16 sm:pb-24 md:pb-32">
                     <div>
-                        <h2 className="text-5xl md:text-7xl font-playfair leading-[1.1] mb-2 normal-case">
+                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-playfair leading-[1.1] mb-2 normal-case">
                             Let's create
                         </h2>
-                        <h2 className="font-script text-5xl md:text-7xl text-lush-gold normal-case mb-8">
+                        <h2 className="font-script text-3xl sm:text-5xl md:text-7xl text-lush-gold normal-case mb-6 sm:mb-8">
                             something beautiful.
                         </h2>
                         <MagneticButton className="text-white">
@@ -25,14 +25,14 @@ const Footer = () => {
                     <div className="flex flex-col md:items-end md:text-right justify-end gap-12">
                         <div>
                             <h4 className="text-sm text-gray-500 uppercase tracking-widest mb-4 font-inter">Location</h4>
-                            <p className="text-xl font-inter font-light">
+                            <p className="text-base sm:text-xl font-inter font-light">
                                 124 Regent Street<br />
                                 London, W1B 5SA
                             </p>
                         </div>
                         <div>
                             <h4 className="text-sm text-gray-500 uppercase tracking-widest mb-4 font-inter">Contact</h4>
-                            <a href="mailto:hello@lushliving.com" className="text-xl hover:text-lush-red transition-colors duration-300 font-inter font-light flex items-center gap-2">
+                            <a href="mailto:hello@lushliving.com" className="text-base sm:text-xl hover:text-lush-red transition-colors duration-300 font-inter font-light flex items-center gap-2">
                                 hello@lushliving.com <ArrowUpRight size={20} />
                             </a>
                         </div>
@@ -48,7 +48,7 @@ const Footer = () => {
                         transition={{ duration: 1, ease: [0.33, 1, 0.68, 1] }}
                         className="w-full text-center"
                     >
-                        <h1 className="text-[18vw] leading-none mb-0 tracking-[0.1em] text-transparent bg-clip-text bg-gradient-to-t from-white/5 to-white/30 font-playfair font-light select-none cursor-default normal-case">
+                        <h1 className="text-[14vw] sm:text-[16vw] md:text-[18vw] leading-none mb-0 tracking-[0.05em] sm:tracking-[0.1em] text-transparent bg-clip-text bg-gradient-to-t from-white/5 to-white/30 font-playfair font-light select-none cursor-default normal-case">
                             LUSH
                         </h1>
                     </motion.div>

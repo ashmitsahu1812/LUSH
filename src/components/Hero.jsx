@@ -34,7 +34,7 @@ const Hero = ({ onExploreClick }) => {
                 <img
                     src="/lush-logo.png?v=2"
                     alt=""
-                    className="absolute top-2 left-2 md:top-4 md:left-4 h-20 md:h-28 w-auto opacity-50 pointer-events-none select-none"
+                    className="absolute top-2 left-2 md:top-4 md:left-4 h-12 sm:h-16 md:h-28 w-auto opacity-50 pointer-events-none select-none"
                     aria-hidden="true"
                 />
                 <motion.div
@@ -45,7 +45,7 @@ const Hero = ({ onExploreClick }) => {
                     style={{ willChange: 'transform, opacity' }}
                 >
                     {/* LUSH in serif */}
-                    <h1 className="text-[14vw] leading-[0.85] mb-0 tracking-[0.12em] font-playfair font-light text-white">
+                    <h1 className="text-[16vw] sm:text-[14vw] leading-[0.85] mb-0 tracking-[0.08em] sm:tracking-[0.12em] font-playfair font-light text-white">
                         LUSH
                     </h1>
 
@@ -54,7 +54,7 @@ const Hero = ({ onExploreClick }) => {
                         initial={{ opacity: 0, x: -30 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, delay: 0.8 }}
-                        className="font-script text-5xl md:text-7xl text-lush-gold -mt-2 md:-mt-3"
+                        className="font-script text-3xl sm:text-5xl md:text-7xl text-lush-gold -mt-1 sm:-mt-2 md:-mt-3"
                     >
                         Living
                     </motion.p>
@@ -65,11 +65,11 @@ const Hero = ({ onExploreClick }) => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 1.2 }}
-                    className="text-center mt-8 mb-12 transform-gpu"
+                    className="text-center mt-6 sm:mt-8 mb-8 sm:mb-12 transform-gpu"
                     style={{ willChange: 'opacity' }}
                 >
-                    <p className="text-lg md:text-2xl font-inter font-light tracking-wide text-lush-cream/70">
-                        ....Layered in <span className="font-script text-2xl md:text-4xl text-lush-gold">luxury</span>
+                    <p className="text-base sm:text-lg md:text-2xl font-inter font-light tracking-wide text-lush-cream/70">
+                        ....Layered in <span className="font-script text-xl sm:text-2xl md:text-4xl text-lush-gold">luxury</span>
                     </p>
                 </motion.div>
 
@@ -86,7 +86,7 @@ const Hero = ({ onExploreClick }) => {
 
             {/* Scroll indicator */}
             <motion.div
-                className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2"
+                className="absolute bottom-6 sm:bottom-10 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 2.2, duration: 1 }}

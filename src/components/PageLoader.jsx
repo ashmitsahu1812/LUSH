@@ -92,7 +92,7 @@ const PageLoader = ({ onComplete }) => {
 
                     {/* "Living" in script */}
                     <motion.span
-                        className="font-script text-4xl md:text-6xl text-lush-gold -mt-1"
+                        className="font-script text-3xl sm:text-4xl md:text-6xl text-lush-gold -mt-1"
                         initial={{ opacity: 0, x: -30 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.6 }}

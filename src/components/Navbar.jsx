@@ -25,7 +25,7 @@ const Navbar = ({ isOpen, onClose }) => {
                     {/* Glassmorphism background */}
                     <div className="absolute inset-0 bg-lush-dark/80 backdrop-blur-2xl border-b border-white/5" />
 
-                    <div className="relative flex items-center justify-between px-6 md:px-12 py-4 md:py-5">
+                    <div className="relative flex items-center justify-between px-4 sm:px-6 md:px-12 py-4 md:py-6">
                         {/* Logo */}
                         <motion.div
                             initial={{ opacity: 0, x: -20 }}
@@ -36,11 +36,11 @@ const Navbar = ({ isOpen, onClose }) => {
                             <img
                                 src="/lush-logo.png?v=2"
                                 alt="LUSH Living"
-                                className="h-10 md:h-12 w-auto"
+                                className="h-8 sm:h-10 md:h-12 w-auto"
                             />
                         </motion.div>
 
-                        {/* Nav Links */}
+                        {/* Desktop Nav Links */}
                         <div className="hidden md:flex items-center gap-1">
                             {navItems.map((item, index) => (
                                 <motion.a
@@ -62,33 +62,13 @@ const Navbar = ({ isOpen, onClose }) => {
                             ))}
                         </div>
 
-                        {/* Mobile Nav Links */}
-                        <div className="flex md:hidden items-center gap-3 flex-wrap justify-end">
-                            {navItems.map((item, index) => (
-                                <motion.a
-                                    key={item.label}
-                                    href={item.href}
-                                    initial={{ opacity: 0, y: -15 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{
-                                        delay: 0.35 + index * 0.08,
-                                        duration: 0.5,
-                                        ease: [0.76, 0, 0.24, 1],
-                                    }}
-                                    className="text-[11px] font-inter font-light uppercase tracking-[0.15em] text-lush-cream/60 hover:text-white transition-colors duration-300"
-                                >
-                                    {item.label}
-                                </motion.a>
-                            ))}
-                        </div>
-
                         {/* Close Button */}
                         <motion.button
                             initial={{ opacity: 0, rotate: -90 }}
                             animate={{ opacity: 1, rotate: 0 }}
                             transition={{ delay: 0.4, duration: 0.5 }}
                             onClick={onClose}
-                            className="ml-6 w-10 h-10 flex items-center justify-center rounded-full border border-white/10 hover:border-lush-red hover:bg-lush-red/10 transition-all duration-300 group"
+                            className="ml-4 sm:ml-6 w-12 h-12 flex items-center justify-center rounded-full border border-white/20 hover:border-lush-red/50 hover:bg-lush-red/10 transition-all duration-300 group"
                             aria-label="Close navigation"
                         >
                             <svg
@@ -102,6 +82,27 @@ const Navbar = ({ isOpen, onClose }) => {
                                 <line x1="13" y1="1" x2="1" y2="13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                             </svg>
                         </motion.button>
+                    </div>
+
+                    {/* Mobile Nav Links - full-width vertical stack */}
+                    <div className="relative md:hidden flex flex-col items-center gap-1 px-4 pb-6">
+                        {navItems.map((item, index) => (
+                            <motion.a
+                                key={item.label}
+                                href={item.href}
+                                onClick={onClose}
+                                initial={{ opacity: 0, y: -15 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{
+                                    delay: 0.35 + index * 0.08,
+                                    duration: 0.5,
+                                    ease: [0.76, 0, 0.24, 1],
+                                }}
+                                className="w-full text-center py-3 text-sm font-inter font-light uppercase tracking-[0.15em] text-lush-cream/60 hover:text-white transition-colors duration-300 border-b border-white/5 last:border-b-0"
+                            >
+                                {item.label}
+                            </motion.a>
+                        ))}
                     </div>
 
                     {/* Subtle bottom glow line */}

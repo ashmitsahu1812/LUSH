@@ -15,9 +15,9 @@ const About = () => {
     const isInView = useInView(containerRef, { once: true, margin: "-10%" });
 
     return (
-        <section ref={containerRef} className="py-32 px-4 md:px-12 lg:px-24 bg-lush-dark text-white relative z-30 overflow-hidden">
+        <section ref={containerRef} className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 md:px-12 lg:px-24 bg-lush-dark text-white relative z-30 overflow-hidden">
             <div className="max-w-7xl mx-auto relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-24 items-center">
 
                     {/* Text Content */}
                     <div className="lg:col-span-5 order-2 lg:order-1">
@@ -31,18 +31,18 @@ const About = () => {
                         </motion.h2>
 
                         <motion.h3
-                            className="text-4xl md:text-6xl font-playfair leading-[1.1] mb-8 normal-case"
+                            className="text-3xl sm:text-4xl md:text-6xl font-playfair leading-[1.1] mb-6 sm:mb-8 normal-case"
                             variants={fadeUpText}
                             initial="hidden"
                             animate={isInView ? "visible" : "hidden"}
                         >
                             We craft <br />
-                            <span className="font-script text-lush-gold normal-case text-5xl md:text-7xl">spaces</span> that <br />
+                            <span className="font-script text-lush-gold normal-case text-4xl sm:text-5xl md:text-7xl">spaces</span> that <br />
                             inspire you.
                         </motion.h3>
 
                         <motion.p
-                            className="text-lg text-gray-400 font-inter font-light leading-relaxed mb-10"
+                            className="text-base sm:text-lg text-gray-400 font-inter font-light leading-relaxed mb-8 sm:mb-10"
                             variants={fadeUpText}
                             initial="hidden"
                             animate={isInView ? "visible" : "hidden"}
@@ -52,9 +52,9 @@ const About = () => {
                     </div>
 
                     {/* Asymmetrical Image Grid */}
-                    <div className="lg:col-span-7 order-1 lg:order-2 grid grid-cols-2 gap-4 md:gap-8 transform-gpu">
+                    <div className="lg:col-span-7 order-1 lg:order-2 grid grid-cols-2 gap-3 sm:gap-4 md:gap-8 transform-gpu">
                         <motion.div
-                            className="mt-12 md:mt-24"
+                            className="mt-8 sm:mt-12 md:mt-24"
                             initial={{ opacity: 0, y: 100 }}
                             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
                             transition={{ duration: 1, ease: [0.33, 1, 0.68, 1], delay: 0.2 }}
