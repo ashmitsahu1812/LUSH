@@ -20,7 +20,8 @@ const PageLoader = ({ onComplete }) => {
                     clearInterval(interval);
                     return 100;
                 }
-                return prev + Math.floor(Math.random() * 12) + 5;
+                // Faster increment: average +4% per 100ms = ~2.5 seconds total
+                return prev + Math.floor(Math.random() * 5) + 2;
             });
         }, 100);
         return () => clearInterval(interval);

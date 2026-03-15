@@ -1,11 +1,13 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const navItems = [
-    { label: 'Architecture', href: '#architecture' },
-    { label: 'Interior', href: '#interior' },
-    { label: 'Landscape Design', href: '#landscape' },
-    { label: 'Project Management', href: '#management' },
+    { label: 'Home', href: '/' },
+    { label: 'Architecture', href: '/architecture' },
+    { label: 'Interior', href: '/interior' },
+    { label: 'Landscape Design', href: '/landscape' },
+    { label: 'Project Management', href: '/management' },
 ];
 
 const Navbar = ({ isOpen, onClose }) => {
@@ -33,19 +35,22 @@ const Navbar = ({ isOpen, onClose }) => {
                             transition={{ delay: 0.3, duration: 0.5 }}
                             className="flex items-center"
                         >
-                            <img
-                                src="/lush-logo.png?v=2"
-                                alt="LUSH Living"
-                                className="h-8 sm:h-10 md:h-12 w-auto"
-                            />
+                            <Link to="/" onClick={onClose}>
+                                <img
+                                    src="/lush-logo.png?v=2"
+                                    alt="LUSH Living"
+                                    className="h-8 sm:h-10 md:h-12 w-auto"
+                                />
+                            </Link>
                         </motion.div>
 
                         {/* Desktop Nav Links */}
                         <div className="hidden md:flex items-center gap-1">
                             {navItems.map((item, index) => (
-                                <motion.a
+                                <Link
                                     key={item.label}
-                                    href={item.href}
+                                    to={item.href}
+                                    onClick={onClose}
                                     initial={{ opacity: 0, y: -20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{
@@ -58,7 +63,7 @@ const Navbar = ({ isOpen, onClose }) => {
                                     {item.label}
                                     {/* Animated underline */}
                                     <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[1px] bg-lush-red group-hover:w-3/4 transition-all duration-500 ease-[cubic-bezier(0.76,0,0.24,1)]" />
-                                </motion.a>
+                                </Link>
                             ))}
                         </div>
 
@@ -87,9 +92,9 @@ const Navbar = ({ isOpen, onClose }) => {
                     {/* Mobile Nav Links - full-width vertical stack */}
                     <div className="relative md:hidden flex flex-col items-center gap-1 px-4 pb-6">
                         {navItems.map((item, index) => (
-                            <motion.a
+                            <Link
                                 key={item.label}
-                                href={item.href}
+                                to={item.href}
                                 onClick={onClose}
                                 initial={{ opacity: 0, y: -15 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -101,7 +106,7 @@ const Navbar = ({ isOpen, onClose }) => {
                                 className="w-full text-center py-3 text-sm font-inter font-light uppercase tracking-[0.15em] text-lush-dark/60 hover:text-lush-dark transition-colors duration-300 border-b border-lush-dark/5 last:border-b-0"
                             >
                                 {item.label}
-                            </motion.a>
+                            </Link>
                         ))}
                     </div>
 
