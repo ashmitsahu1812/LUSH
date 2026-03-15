@@ -43,7 +43,7 @@ const Hero = ({ onExploreClick }) => {
                         initial={{ opacity: 0, x: -30 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, delay: 0.8 }}
-                        className="font-slight text-[8vw] sm:text-[7vw] md:text-[5vw] leading-[0.8] text-lush-red mt-1 sm:mt-2 drop-shadow-sm"
+                        className="font-slight text-[6vw] sm:text-[5vw] md:text-[4vw] leading-[0.8] text-lush-red mt-4 sm:mt-6 md:mt-8 drop-shadow-sm"
                     >
                         Living
                     </motion.p>
