@@ -34,7 +34,7 @@ const Hero = ({ onExploreClick }) => {
                     style={{ willChange: 'transform, opacity' }}
                 >
                     {/* LUSH in serif */}
-                    <h1 className="text-[16vw] sm:text-[14vw] leading-[0.85] mb-0 tracking-[0.08em] sm:tracking-[0.12em] font-cormorant font-light text-lush-dark">
+                    <h1 className="text-[12vw] sm:text-[10vw] leading-[0.8] mb-0 tracking-[0.1em] font-cormorant font-bold text-lush-red inline-block drop-shadow-sm">
                         LUSH
                     </h1>
 
@@ -43,7 +43,7 @@ const Hero = ({ onExploreClick }) => {
                         initial={{ opacity: 0, x: -30 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, delay: 0.8 }}
-                        className="font-slight text-3xl sm:text-5xl md:text-7xl text-lush-red -mt-1 sm:-mt-2 md:-mt-3"
+                        className="font-slight text-[8vw] sm:text-[7vw] md:text-[5vw] leading-[0.8] text-lush-red mt-1 sm:mt-2 drop-shadow-sm"
                     >
                         Living
                     </motion.p>
@@ -54,11 +54,11 @@ const Hero = ({ onExploreClick }) => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 1.2 }}
-                    className="text-center mt-6 sm:mt-8 mb-8 sm:mb-12 transform-gpu"
+                    className="text-center mt-10 sm:mt-14 mb-8 sm:mb-12 transform-gpu"
                     style={{ willChange: 'opacity' }}
                 >
-                    <p className="text-base sm:text-lg md:text-2xl font-inter font-light tracking-wide text-lush-dark/70">
-                        ....<span className="font-now">Layered in</span> <span className="font-beyond text-xl sm:text-2xl md:text-4xl text-lush-red">luxury</span>
+                    <p className="text-base sm:text-lg md:text-2xl font-inter font-light tracking-widest text-lush-dark">
+                        Layered in <span className="font-beyond text-xl sm:text-2xl md:text-3xl text-lush-dark ml-2">luxury</span>
                     </p>
                 </motion.div>
 

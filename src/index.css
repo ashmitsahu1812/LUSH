@@ -1,13 +1,21 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Above the Beyond Script';
+  src: url('/fonts/above-the-beyond-script.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --font-playfair: "Playfair Display", serif;
   --font-script: "Great Vibes", cursive;
   --font-inter: "Inter", sans-serif;
   --font-cormorant: "Cormorant Garamond", serif;
-  --font-slight: "Slight", "Great Vibes", cursive;
+  --font-slight: "Pinyon Script", "Great Vibes", cursive;
   --font-now: "NOW", "Inter", sans-serif;
-  --font-beyond: "Above the Beyond Script", "Playfair Display", serif;
+  --font-beyond: "Above the Beyond Script", "Caveat", cursive;
 
   --color-lush-dark: #0a0a0a;
   --color-lush-red: #c0392b;
