@@ -2,7 +2,7 @@ export const architectureProjects = [
     {
         id: "glass-pavilion",
         title: 'The Glass Pavilion',
-        category: 'Minimalist Architecture',
+        category: 'Commercial',
         image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200',
         details: {
             client: "Private Client",
@@ -20,7 +20,7 @@ export const architectureProjects = [
     {
         id: "urban-oasis",
         title: 'Urban Oasis',
-        category: 'Modern Residential',
+        category: 'Residential',
         image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200',
         details: {
             client: "Soma Developments",
@@ -38,7 +38,7 @@ export const architectureProjects = [
     {
         id: "lakeside-retreat",
         title: 'Lakeside Retreat',
-        category: 'Eco-Friendly Resort',
+        category: 'Hospitality',
         image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200',
         details: {
             client: "Aura Resorts Group",
@@ -56,7 +56,7 @@ export const architectureProjects = [
     {
         id: "concrete-monolith",
         title: 'Concrete Monolith',
-        category: 'Brutalist Architecture',
+        category: 'Institutional',
         image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200',
         details: {
             client: "Global Arts Foundation",
