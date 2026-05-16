@@ -7,7 +7,7 @@ export const interiorProjects = [
         details: {
             client: "Mr. Amiya Sahu",
             year: "2024",
-            location: "Bhubaneswar, Odisha",
+            location: "Hyderabad, Telangana",
             description: "A contemporary residence designed with a focus on minimalism, warmth, and natural textures. The project highlights a harmonious balance between sleek modern lines and earthy, tactile materials.",
             concept: "The design explores the 'Modern Organic' aesthetic. We integrated feature walls with textured brick patterns and wood-slat paneling to provide depth and warmth. The open-plan living area is grounded by neutral tones and soft lighting, while the private bedrooms utilize marble flooring and gold-accented cabinetry to elevate the sense of luxury. Every detail, from the bespoke foyer console to the integrated TV units, was designed to maximize both form and function.",
             gallery: [
