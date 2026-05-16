@@ -1,5 +1,24 @@
 export const interiorProjects = [
     {
+        id: "mr-pradhans-talcher",
+        title: "Mr. Pradhans, Talcher",
+        category: 'Residential',
+        image: '/projects/interior/mr-pradhans-talcher/dining-area.png',
+        details: {
+            client: "Mr. Pradhan",
+            year: "2024",
+            location: "Talcher, Odisha",
+            description: "A sprawling residential project that emphasizes grand spatial experiences and intricate interior detailing. The design language is consistent across all rooms, creating a unified sense of luxury.",
+            concept: "We focused on 'layered luxury', utilizing rich wood paneling, indirect lighting, and bespoke furniture. The dining area serves as the heart of the home, connected seamlessly to a detailed foyer and a luxurious living space, all while maintaining a warm and welcoming residential feel.",
+            gallery: [
+                '/projects/interior/mr-pradhans-talcher/dining-area.png',
+                '/projects/interior/mr-pradhans-talcher/living-room.png',
+                '/projects/interior/mr-pradhans-talcher/bedroom.png',
+                '/projects/interior/mr-pradhans-talcher/foyer-details.png'
+            ]
+        }
+    },
+    {
         id: "equipage-infracore",
         title: "EQUIPAGE INFRACORE",
         category: 'Commercial',
