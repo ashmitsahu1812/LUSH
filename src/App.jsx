@@ -42,7 +42,7 @@ function AppContent() {
         onClose={() => setIsInquiryModalOpen(false)} 
       />
       
-      <WhatsAppButton />
+      {!loading && <WhatsAppButton />}
 
       <main className="bg-white min-h-screen">
         <Routes>

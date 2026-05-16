@@ -18,8 +18,7 @@ const WhatsAppButton = () => {
             transition={{ 
                 type: "spring", 
                 stiffness: 260, 
-                damping: 20,
-                delay: 2 // Show after loader/initial animations
+                damping: 20
             }}
             className="fixed bottom-8 right-8 z-[9999] w-14 h-14 bg-lush-red rounded-full flex items-center justify-center shadow-2xl cursor-pointer group"
             aria-label="Contact us on WhatsApp"
