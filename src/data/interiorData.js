@@ -1,5 +1,24 @@
 export const interiorProjects = [
     {
+        id: "equipage-infracore",
+        title: "EQUIPAGE INFRACORE",
+        category: 'Commercial',
+        image: '/projects/interior/equipage-infracore/reception.png',
+        details: {
+            client: "Equipage Infracore",
+            year: "2024",
+            location: "Bhubaneswar, Odisha",
+            description: "A modern corporate office space designed to reflect the dynamic nature of the infrastructure industry. The interior combines professional elegance with functional workspace planning.",
+            concept: "The design philosophy focuses on transparency and collaboration. We used glass partitions and open-plan workstations to foster communication, while premium wood finishes and a bold color palette in key areas create a lasting impression for clients and partners.",
+            gallery: [
+                '/projects/interior/equipage-infracore/reception.png',
+                '/projects/interior/equipage-infracore/executive-cabin.png',
+                '/projects/interior/equipage-infracore/workstations.png',
+                '/projects/interior/equipage-infracore/boardroom.png'
+            ]
+        }
+    },
+    {
         id: "dgh-data-center",
         title: "DGH DATA CENTER BHUBANESWAR",
         category: 'Commercial',
