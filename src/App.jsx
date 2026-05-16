@@ -13,6 +13,7 @@ import ManagementPage from './components/ManagementPage';
 import CompletedProjectsPage from './components/CompletedProjectsPage';
 import AboutPage from './components/AboutPage';
 import ProjectInquiryForm from './components/ProjectInquiryForm';
+import WhatsAppButton from './components/WhatsAppButton';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -40,6 +41,8 @@ function AppContent() {
         isOpen={isInquiryModalOpen} 
         onClose={() => setIsInquiryModalOpen(false)} 
       />
+      
+      <WhatsAppButton />
 
       <main className="bg-white min-h-screen">
         <Routes>
