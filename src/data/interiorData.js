@@ -20,6 +20,8 @@ export const interiorProjects = [
                 '/projects/interior/mr-amiya-sahu-residence/kids-bedroom.png',
                 '/projects/interior/mr-amiya-sahu-residence/bar-unit.png',
                 '/projects/interior/mr-amiya-sahu-residence/study-area.png',
+                '/projects/interior/mr-amiya-sahu-residence/kitchen-main.png',
+                '/projects/interior/mr-amiya-sahu-residence/kitchen-to-bar.png',
                 '/projects/interior/mr-amiya-sahu-residence/foyer-console.png'
             ]
         }
