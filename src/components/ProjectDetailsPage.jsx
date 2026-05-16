@@ -1,20 +1,30 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link, useNavigate, useLocation } from 'react-router-dom';
 import { architectureProjects } from '../data/architectureData';
+import { interiorProjects } from '../data/interiorData';
 
 const ProjectDetailsPage = () => {
     const { projectId } = useParams();
     const navigate = useNavigate();
-    const project = architectureProjects.find(p => p.id === projectId);
+    const location = useLocation();
+    
+    // Find project in both datasets
+    const archProject = architectureProjects.find(p => p.id === projectId);
+    const intProject = interiorProjects.find(p => p.id === projectId);
+    const project = archProject || intProject;
+    
+    const isInterior = !!intProject;
+    const backPath = isInterior ? '/interior' : '/architecture';
+    const backLabel = isInterior ? 'Back to Interior' : 'Back to Architecture';
 
     useEffect(() => {
         window.scrollTo(0, 0);
-        // If project is not found, we redirect back to the architecture page
+        // If project is not found, we redirect back
         if (!project) {
-            navigate('/architecture');
+            navigate(backPath);
         }
-    }, [projectId, project, navigate]);
+    }, [projectId, project, navigate, backPath]);
 
     if (!project) return null;
 
@@ -28,12 +38,12 @@ const ProjectDetailsPage = () => {
             <div className="max-w-7xl mx-auto">
                 
                 {/* Back button */}
-                <Link to="/architecture" className="inline-flex items-center gap-2 text-lush-dark/60 hover:text-lush-red transition-colors duration-300 font-inter text-sm tracking-widest uppercase mb-12 group">
+                <Link to={backPath} className="inline-flex items-center gap-2 text-lush-dark/60 hover:text-lush-red transition-colors duration-300 font-inter text-sm tracking-widest uppercase mb-12 group">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="transform group-hover:-translate-x-1 transition-transform">
                         <line x1="19" y1="12" x2="5" y2="12"></line>
                         <polyline points="12 19 5 12 12 5"></polyline>
                     </svg>
-                    Back to Architecture
+                    {backLabel}
                 </Link>
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 mb-24">

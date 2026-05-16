@@ -1,33 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
-
-const interiorProjects = [
-    {
-        id: 1,
-        title: 'The Velvet Lounge',
-        category: 'Hospitality',
-        image: 'https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?q=80&w=1200',
-    },
-    {
-        id: 2,
-        title: 'Penthouse Suite',
-        category: 'Residential',
-        image: 'https://images.unsplash.com/photo-1600607688969-a5bfcd64bd0b?q=80&w=1200',
-    },
-    {
-        id: 3,
-        title: 'Minimalist Studio',
-        category: 'Commercial',
-        image: 'https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=1200',
-    },
-    {
-        id: 4,
-        title: 'Heritage Restoration',
-        category: 'Institutional',
-        image: 'https://images.unsplash.com/photo-1594901580222-383b1bf3fcb6?q=80&w=1200',
-    }
-];
+import { Link } from 'react-router-dom';
+import { interiorProjects } from '../data/interiorData';
 
 const subcategories = [
     {
@@ -146,30 +121,34 @@ const InteriorPage = () => {
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
                                 {filteredProjects.map((project, index) => (
-                                    <motion.div 
+                                    <Link 
+                                        to={`/interior/${project.id}`}
                                         key={project.id}
-                                        initial={{ y: 50, opacity: 0 }}
-                                        animate={{ y: 0, opacity: 1 }}
-                                        transition={{ duration: 0.8, delay: index * 0.1 }}
-                                        className={`group cursor-pointer ${index % 2 !== 0 ? 'md:mt-24' : ''}`}
                                     >
-                                        <div className="relative overflow-hidden aspect-[4/5] mb-6 rounded-sm">
-                                            <img 
-                                                src={project.image} 
-                                                alt={project.title}
-                                                className="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]"
-                                            />
-                                            <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
-                                        </div>
-                                        <div>
-                                            <h3 className="text-xl md:text-2xl font-playfair font-bold text-lush-dark group-hover:text-lush-red transition-colors duration-300">
-                                                {project.title}
-                                            </h3>
-                                            <p className="text-xs md:text-sm font-inter text-gray-500 uppercase tracking-widest mt-2">
-                                                {project.category}
-                                            </p>
-                                        </div>
-                                    </motion.div>
+                                        <motion.div 
+                                            initial={{ y: 50, opacity: 0 }}
+                                            animate={{ y: 0, opacity: 1 }}
+                                            transition={{ duration: 0.8, delay: index * 0.1 }}
+                                            className={`group cursor-pointer ${index % 2 !== 0 ? 'md:mt-24' : ''}`}
+                                        >
+                                            <div className="relative overflow-hidden aspect-[4/5] mb-6 rounded-sm">
+                                                <img 
+                                                    src={project.image} 
+                                                    alt={project.title}
+                                                    className="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]"
+                                                />
+                                                <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
+                                            </div>
+                                            <div>
+                                                <h3 className="text-xl md:text-2xl font-playfair font-bold text-lush-dark group-hover:text-lush-red transition-colors duration-300">
+                                                    {project.title}
+                                                </h3>
+                                                <p className="text-xs md:text-sm font-inter text-gray-500 uppercase tracking-widest mt-2">
+                                                    {project.category}
+                                                </p>
+                                            </div>
+                                        </motion.div>
+                                    </Link>
                                 ))}
                             </div>
 

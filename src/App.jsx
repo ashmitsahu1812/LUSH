@@ -48,6 +48,7 @@ function AppContent() {
           <Route path="/architecture/:projectId" element={<ProjectDetailsPage />} />
           <Route path="/completed-projects" element={<CompletedProjectsPage />} />
           <Route path="/interior" element={<InteriorPage />} />
+          <Route path="/interior/:projectId" element={<ProjectDetailsPage />} />
           <Route path="/landscape" element={<LandscapePage />} />
           <Route path="/management" element={<ManagementPage />} />
           <Route path="/about" element={<AboutPage />} />
