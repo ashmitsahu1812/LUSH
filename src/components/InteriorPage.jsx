@@ -8,25 +8,25 @@ const subcategories = [
     {
         id: 'Residential',
         title: 'Residential',
-        image: 'https://images.unsplash.com/photo-1600607688969-a5bfcd64bd0b?q=80&w=1200',
+        image: '/projects/interior/mr-amiya-sahu-residence/living-room-main.png',
         description: 'Luxurious interiors for modern living.'
     },
     {
         id: 'Commercial',
         title: 'Commercial',
-        image: 'https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=1200',
+        image: '/projects/interior/dgh-data-center/entrance-lobby.png',
         description: 'Inspiring workspaces and high-end retail.'
     },
     {
         id: 'Hospitality',
         title: 'Hospitality',
-        image: 'https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?q=80&w=1200',
+        image: '/projects/interior/mr-gopal-sharma-residence/living-room-2.png',
         description: 'Elegant designs for hotels and leisure.'
     },
     {
         id: 'Institutional',
         title: 'Institutional',
-        image: 'https://images.unsplash.com/photo-1594901580222-383b1bf3fcb6?q=80&w=1200',
+        image: '/projects/interior/equipage-infracore/boardroom.png',
         description: 'Refined interiors for public institutions.'
     }
 ];
