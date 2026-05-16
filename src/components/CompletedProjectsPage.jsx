@@ -8,28 +8,28 @@ const categories = [
         id: 'architecture',
         title: 'Architecture',
         description: 'Structural elegance and spatial harmony.',
-        image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200',
+        image: '/projects/interior/mr-gopal-sharma-residence/hallway.png',
         href: '/architecture'
     },
     {
         id: 'interior',
         title: 'Interior',
         description: 'Bespoke indoor environments and luxury.',
-        image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200',
+        image: '/projects/interior/mr-amiya-sahu-residence/living-room-main.png',
         href: '/interior'
     },
     {
         id: 'landscape',
         title: 'Landscape Design',
         description: 'Seamless transitions between nature and form.',
-        image: 'https://images.unsplash.com/photo-1558904541-efa843a96f09?q=80&w=1200',
+        image: '/projects/interior/mr-pradhans-talcher/outdoor-deck.png',
         href: '/landscape'
     },
     {
         id: 'management',
         title: 'Project Management',
         description: 'Executing complex visions with precision.',
-        image: 'https://images.unsplash.com/photo-1541888081622-4a004b12fe69?q=80&w=1200',
+        image: '/projects/interior/dgh-data-center/workstations.png',
         href: '/management'
     }
 ];
