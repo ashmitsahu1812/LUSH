@@ -14,7 +14,10 @@ export const interiorProjects = [
                 '/projects/interior/mr-pradhans-talcher/dining-area.png',
                 '/projects/interior/mr-pradhans-talcher/living-room.png',
                 '/projects/interior/mr-pradhans-talcher/bedroom.png',
-                '/projects/interior/mr-pradhans-talcher/foyer-details.png'
+                '/projects/interior/mr-pradhans-talcher/foyer-details.png',
+                '/projects/interior/mr-pradhans-talcher/outdoor-deck.png',
+                '/projects/interior/mr-pradhans-talcher/lounge-area.png',
+                '/projects/interior/mr-pradhans-talcher/kitchen-area.png'
             ]
         }
     },
