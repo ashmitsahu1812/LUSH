@@ -15,6 +15,11 @@ export const interiorProjects = [
                 '/projects/interior/mr-amiya-sahu-residence/tv-unit.png',
                 '/projects/interior/mr-amiya-sahu-residence/bedroom-main.png',
                 '/projects/interior/mr-amiya-sahu-residence/bedroom-tv-unit.png',
+                '/projects/interior/mr-amiya-sahu-residence/bedroom-view-2.png',
+                '/projects/interior/mr-amiya-sahu-residence/master-headboard.png',
+                '/projects/interior/mr-amiya-sahu-residence/kids-bedroom.png',
+                '/projects/interior/mr-amiya-sahu-residence/bar-unit.png',
+                '/projects/interior/mr-amiya-sahu-residence/study-area.png',
                 '/projects/interior/mr-amiya-sahu-residence/foyer-console.png'
             ]
         }
