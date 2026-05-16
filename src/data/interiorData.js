@@ -1,5 +1,24 @@
 export const interiorProjects = [
     {
+        id: "dgh-data-center",
+        title: "DGH DATA CENTER BHUBANESWAR",
+        category: 'Commercial',
+        image: '/projects/interior/dgh-data-center/manager-office.png',
+        details: {
+            client: "DGH Data Centers",
+            year: "2024",
+            location: "Bhubaneswar, Odisha",
+            description: "A state-of-the-art facility designed for high-performance computing environments. The interior focuses on a balance between technical efficiency and professional aesthetics.",
+            concept: "The design utilizes a sophisticated industrial palette with warm wood accents to soften the technical environment. High-efficiency lighting and ergonomic workstations were prioritized to ensure a productive and comfortable workspace for data center operators and management.",
+            gallery: [
+                '/projects/interior/dgh-data-center/manager-office.png',
+                '/projects/interior/dgh-data-center/conference-room.png',
+                '/projects/interior/dgh-data-center/entrance-lobby.png',
+                '/projects/interior/dgh-data-center/workstations.png'
+            ]
+        }
+    },
+    {
         id: "mr-pradhans-residence",
         title: "Mr. Pradhan's Residence",
         category: 'Residential',
