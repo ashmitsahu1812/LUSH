@@ -21,7 +21,7 @@ const WhatsAppButton = () => {
                 damping: 20,
                 delay: 2 // Show after loader/initial animations
             }}
-            className="fixed bottom-8 right-8 z-[9999] w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-2xl cursor-pointer group"
+            className="fixed bottom-8 right-8 z-[9999] w-14 h-14 bg-lush-red rounded-full flex items-center justify-center shadow-2xl cursor-pointer group"
             aria-label="Contact us on WhatsApp"
         >
             {/* Tooltip */}
