@@ -36,24 +36,24 @@ const categories = [
 
 const sliderImages = [
     {
-        url: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200',
-        title: 'Glass Pavilion',
-        category: 'Architecture'
-    },
-    {
-        url: 'https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?q=80&w=1200',
-        title: 'The Velvet Lounge',
+        url: '/projects/interior/mr-amiya-sahu-residence/living-room-main.png',
+        title: 'Amiya Sahu Residence',
         category: 'Interior'
     },
     {
-        url: 'https://images.unsplash.com/photo-1558904541-efa843a96f09?q=80&w=1200',
-        title: 'Zen Gardens',
-        category: 'Landscape'
+        url: '/projects/interior/mr-gopal-sharma-residence/living-room-1.png',
+        title: 'Gopal Sharma Residence',
+        category: 'Interior'
     },
     {
-        url: 'https://images.unsplash.com/photo-1541888081622-4a004b12fe69?q=80&w=1200',
-        title: 'Pinnacle Build',
-        category: 'Management'
+        url: '/projects/interior/mr-pradhans-talcher/dining-area.png',
+        title: "Mr. Pradhan's Residence",
+        category: 'Interior'
+    },
+    {
+        url: '/projects/interior/dgh-data-center/manager-office.png',
+        title: 'DGH Data Center',
+        category: 'Commercial'
     }
 ];
 
