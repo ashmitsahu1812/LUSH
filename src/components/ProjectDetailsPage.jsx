@@ -88,16 +88,12 @@ const ProjectDetailsPage = () => {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 mb-32 max-w-5xl mx-auto">
-                    <div>
-                        <h3 className="font-playfair text-2xl md:text-3xl font-bold mb-4 text-lush-dark">The Vision</h3>
-                        <p className="font-inter font-light text-lush-dark/70 leading-relaxed text-base md:text-lg">
+                <div className="max-w-4xl mx-auto mb-32">
+                    <div className="space-y-8">
+                        <p className="font-inter font-light text-lush-dark/70 leading-relaxed text-lg md:text-xl">
                             {project.details.description}
                         </p>
-                    </div>
-                    <div>
-                        <h3 className="font-playfair text-2xl md:text-3xl font-bold mb-4 text-lush-dark">The Approach</h3>
-                        <p className="font-inter font-light text-lush-dark/70 leading-relaxed text-base md:text-lg">
+                        <p className="font-inter font-light text-lush-dark/70 leading-relaxed text-lg md:text-xl border-t border-lush-dark/5 pt-8">
                             {project.details.concept}
                         </p>
                     </div>
