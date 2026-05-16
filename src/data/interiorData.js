@@ -1,5 +1,24 @@
 export const interiorProjects = [
     {
+        id: "mr-gopal-sharma-residence",
+        title: "Mr. Gopal Sharma Residence",
+        category: 'Residential',
+        image: '/projects/interior/mr-gopal-sharma-residence/living-room-1.png',
+        details: {
+            client: "Mr. Gopal Sharma",
+            year: "2024",
+            location: "Bhubaneswar, Odisha",
+            description: "A sophisticated urban residence that masterfully blends classical design elements with modern luxury. The project focuses on creating a sense of grandeur through arched transitions and ornate detailing.",
+            concept: "The design concept revolves around 'Contemporary Classicism'. We utilized wooden ceiling beams, arched walkways, and a rich palette of gold and emerald green to create a timeless aesthetic. Each space, from the grand hallway to the master bedroom, is meticulously curated with bespoke furniture and custom wall treatments to ensure a premium living experience.",
+            gallery: [
+                '/projects/interior/mr-gopal-sharma-residence/living-room-1.png',
+                '/projects/interior/mr-gopal-sharma-residence/living-room-2.png',
+                '/projects/interior/mr-gopal-sharma-residence/master-bedroom.png',
+                '/projects/interior/mr-gopal-sharma-residence/hallway.png'
+            ]
+        }
+    },
+    {
         id: "mr-pradhans-talcher",
         title: "Mr. Pradhans, Talcher",
         category: 'Residential',
