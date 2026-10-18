@@ -153,8 +153,19 @@ const InteriorPage = () => {
                             </div>
 
                             {filteredProjects.length === 0 && (
-                                <div className="py-24 text-center">
-                                    <p className="text-gray-500 font-inter italic">No projects found in this category yet.</p>
+                                <div className="py-24 sm:py-32 text-center flex flex-col items-center justify-center border border-dashed border-gray-200 rounded-sm bg-gray-50/50 px-6 mt-8">
+                                    <div className="w-16 h-16 rounded-full border border-lush-dark/15 flex items-center justify-center mb-6 text-lush-dark/40">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                            <line x1="9" y1="3" x2="9" y2="21"/>
+                                        </svg>
+                                    </div>
+                                    <h3 className="text-2xl sm:text-3xl font-playfair font-medium text-lush-dark mb-3">
+                                        No work in this category yet
+                                    </h3>
+                                    <p className="text-xs sm:text-sm font-inter tracking-[0.25em] uppercase text-lush-red font-semibold">
+                                        Coming Soon
+                                    </p>
                                 </div>
                             )}
                         </motion.div>
